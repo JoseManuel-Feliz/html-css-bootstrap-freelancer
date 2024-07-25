@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html-css-bootstrap-freelancer</title>
+    <!--  BOOTSTRAP-->
     <link rel='stylesheet'
         href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css'
         integrity='sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=='
@@ -12,20 +13,30 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
         integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
         crossorigin='anonymous' />
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header>
-        <nav class=" d-flex justify-content-between align-items-center">
 
-            <div class="text-bg-danger">
+    <!-- Heading -->
+    <header>
+        <nav id="Navbar" class=" d-flex justify-content-between align-items-center">
+
+            <div id="Site-title" class="text-bg-danger">
                 start bootstrap
             </div>
-            <div class="text-bg-danger">
-                bottone
+            <div id="Navmenu" class="text-bg-danger">
+                <span class="d-block d-md-none">bottone</span>
+                <ul class="list-inline d-none d-md-block">
+                    <li class="list-inline-item">testo</li>
+                    <li class="list-inline-item">testo</li>
+                    <li class="list-inline-item">testo</li>
+                </ul>
             </div>
         </nav>
+
+        <!-- Freelancer-profile -->
         <div class="container-fluid">
             <div class="smile-man text-bg-success row row-cols-1  text-center align-items-end">
                 <div class="col">
@@ -38,58 +49,158 @@
                         <i
                             class="bi bi-star-fill bg-success position-absolute top-50 start-50 translate-middle p-1"></i>
                     </div>
+
+                    <!-- Freelancer -->
                     <p class="mt-3">testo-testo-testo</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container-fluid px-4  text-center">
-        <h1 class="my-4">Portfolio</h1>
+    <!-- Main Text -->
+    <main>
 
-        <div class="position-relative my-5 ">
-            <div class="border border-dark w-25 m-auto"></div>
-            <i class="bi bi-star-fill bg-white position-absolute top-50 start-50 translate-middle p-1"></i>
-        </div>
+        <!-- Freelancer Porfolio -->
+        <section id="Porfolio-cards" class="container-fluid px-4 py-3 text-center">
 
-
-        <div class="row row-cols-1 g-4 immagini">
-
-            <div class="col bg-danger">
-                <div class="">
-                </div>
-            </div>
-
-            <div class="col bg-info">
-                <div class="">
-                </div>
+            <h1 class="my-4">Portfolio</h1>
+            <div class="position-relative my-5 ">
+                <div class="border border-dark w-25 m-auto"></div>
+                <i class="bi bi-star-fill bg-white position-absolute top-50 start-50 translate-middle p-1"></i>
             </div>
 
 
-            <div class="col bg-dark">
-                <div class=>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 immagini row row-cols-1 ">
+
+                <div class="col  rounded-4 bg-danger">
+                    <div class="immagini-belle p-3 rounded-circle">
+                    </div>
+                </div>
+
+                <div class="col rounded-4 bg-info">
+                    <div class="immagini-belle p-3 rounded-circle">
+                    </div>
+                </div>
+
+
+                <div class="col rounded-4 bg-dark">
+                    <div class="immagini-belle p-3 rounded-circle">
+                    </div>
+                </div>
+
+                <div class="col rounded-4 bg-primary">
+                    <div class="immagini-belle p-3 rounded-circle">
+                    </div>
+                </div>
+
+                <div class="col rounded-4 bg-secondary">
+                    <div class="immagini-belle p-3 rounded-circle ">
+                    </div>
+                </div>
+
+                <div class="col rounded-4  bg-danger-subtle">
+                    <div class="immagini-belle p-3 rounded-circle">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="col bg-primary">
-                <div class="">
+        <!-- Freelancer Bootstrap About Section  -->
+        <section id="Site-info" class="bg-success px-4">
+            <div class="container-fluid text-center text-light py-4">
+
+                <h2 class="mb-4">About</h2>
+
+                <div class="position-relative ">
+                    <div class="border border-white w-25 m-auto"></div>
+                    <i class="bi bi-star-fill bg-success position-absolute top-50 start-50 translate-middle p-1"></i>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 text-start my-4 ">
+                    <p class="col">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed eius dolore est quam voluptatem
+                        quia
+                        impedit
+                        tenetur voluptate blanditiis sit, quidem nulla assumenda eaque ullam dolor nesciunt tempore
+                        modi?
+                        Temporibus?
+                    </p>
+
+                    <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequatur dicta
+                        excepturi
+                        temporibus
+                        totam
+                        culpa quas alias dignissimos sequi ratione, quae accusamus tempora magnam laboriosam pariatur
+                        sint
+                        fugiat
+                        maxime sit!
+                    </p>
+                </div class="border border-white">
+
+                <div class="border w-25 m-auto">
+                    <i class="bi bi-cloud-arrow-down"></i>
+                    <span> Download</span>
+
                 </div>
             </div>
+        </section>
 
-            <div class="col bg-primary-emphasis">
-                <div class="">
+        <!-- Personal information -->
+        <section id="Contact-form">
+            <div class="container-fluid py-3">
+
+                <h2 class="mb-4 text-center">Contact Me</h2>
+                <div class="position-relative ">
+                    <div class="border border-dark w-25 m-auto"></div>
+                    <i class="bi bi-star-fill bg-white position-absolute top-50 start-50 translate-middle p-1"></i>
                 </div>
+
+                <!-- personal data list -->
+                <ul class="list-group list-group-flush my-3">
+                    <li class="list-group-item">Name</li>
+                    <li class="list-group-item">Email Address</li>
+                    <li class="list-group-item">Phone Number</li>
+                    <li class="message list-group-item mt-4 border-bottom border-dark-subtle">Message</li>
+                </ul>
+                <button type="button" class="btn btn-success">send</button>
+
             </div>
-
-            <div class="col  bg-danger-emphasis">
-                <div class=>
-                </div>
-            </div>
-
-        </div>
-
-
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-light">
+        <div class="container-fluid py-3">
+
+            <!-- Company Address -->
+            <div id="Address" class="row row-cols-1 row-cols-md-3 justify-content-between g-4  text-center">
+                <div class="col">
+                    <h4>testo-testo-testo</h4>
+                    <p>testo-testo-testo</p>
+                </div>
+
+                <!-- Company Socials Profile -->
+                <div class="col">
+                    <span class="border border-dark px-2 py-3 rounded-circle">icona</span>
+                    <span class="border border-dark px-2 py-3 rounded-circle">icona</span>
+                    <span class="border border-dark px-2 py-3 rounded-circle">icona</span>
+                </div>
+
+                <!-- About us -->
+                <div class="col">
+                    <h4>testo-testo-testo</h4>
+                    <p>testo-testo-testo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright" class="container-fluid text-center bg-dark  ">
+            <small>
+                <span>copyright testo-testo-testo</span>
+            </small>
+        </div>
+
+    </footer>
 </body>
 
 </html>
