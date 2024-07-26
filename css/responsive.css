@@ -1,0 +1,28 @@
+@media screen and (min-width:768px) {
+    .website-name {
+        font-size: 1.8rem;
+    }
+
+    .big-title {
+        font-size: 4rem;
+    }
+
+    .porfolio,
+    .about,
+    .form {
+        font-size: 3.5rem;
+    }
+
+    .website-name,
+    .about,
+    .big-title,
+    .form,
+    .porfolio {
+        font-weight: 600;
+    }
+
+    #address>h5 {
+        font-size: 1.7rem;
+    }
+
+}
