@@ -1,34 +1,65 @@
+/* CUSTOM PROPERTIES */
+:root {
+    --bluewood: #2C3E50;
+    --mint: #1ABC9C;
+    --plaudit: #3A546D;
+}
+
+
+/* COLOR PALETTE */
+.c-mint {
+    color: var(--mint);
+}
+
+.bg-mint {
+    background-color: var(--mint);
+}
+
+.c-bluewood {
+    color: var(--bluewood);
+}
+
+.b-c-bluewood {
+    border-color: var(--bluewood);
+    border: 2px solid;
+}
+
+.bg-plaudit {
+    background-color: var(--plaudit);
+}
+
+.bg-bluewood {
+    background-color: var(--bluewood);
+}
+
 /* Navbar */
 nav {
-    background-color: #2C3E50;
+    background-color: var(--bluewood);
     height: 100px;
 }
 
-/* Feelancer Profile */
-
-/* .image {
-    height: 150px;
-    width: 150px;
-} */
-
-/* Freenlancer Portfolio */
-.immagini>div {
-    height: 350px;
-    /*  margin:35px 0 */
-    display: flex;
-
-}
-
-.immagini-belle {
-    background-color: burlywood;
-    height: 250px;
-    width: 250px;
-    margin: auto;
-
-
-}
-
 /* Personal information */
-.message {
-    height: 150px;
+.Contact-form {
+    border: none;
+    border-bottom: 1px solid #80808087;
+    border-radius: 0;
+}
+
+/* COMPANY SOCIAL PROFILE */
+.company-socials>a {
+
+    border-radius: 50%;
+    border: 1px solid;
+    font-size: 1.5rem;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin: 0 5px;
+
+}
+
+/* COPYRIGHT */
+#copyright {
+    height: 100px;
 }
