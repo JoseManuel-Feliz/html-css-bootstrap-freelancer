@@ -19,11 +19,6 @@
     color: var(--bluewood);
 }
 
-.b-c-bluewood {
-    border-color: var(--bluewood);
-    border: 2px solid;
-}
-
 .bg-plaudit {
     background-color: var(--plaudit);
 }
@@ -32,10 +27,38 @@
     background-color: var(--bluewood);
 }
 
+/* Heading */
 /* Navbar */
 nav {
-    background-color: var(--bluewood);
     height: 100px;
+}
+
+/* Website name */
+.website-name {
+    font-size: calc(1.275rem + .3vw);
+}
+
+/* Main */
+/* Big title */
+.big-title {
+    font-size: 2.5rem;
+}
+
+/* Section */
+.porfolio,
+.about,
+.form {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+/* Star line through */
+.star-line-th {
+    max-width: calc(200px + 2vw);
+}
+
+.border-color-bluewood {
+    border-color: var(--bluewood);
+    border: 2px solid;
 }
 
 /* Personal information */
@@ -47,7 +70,6 @@ nav {
 
 /* COMPANY SOCIAL PROFILE */
 .company-socials>a {
-
     border-radius: 50%;
     border: 1px solid;
     font-size: 1.5rem;
