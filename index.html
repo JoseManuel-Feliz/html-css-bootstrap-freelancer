@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html-css-bootstrap-freelancer</title>
-    <!-- ICONS -->
+    <title>Bootstrap Freelancer</title>
+    <!-- BOOTSTRAP ICONS -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css'
         integrity='sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=='
         crossorigin='anonymous' />
-    <!--  BOOTSTRAP-->
+    <!-- BOOTSTRAP CSS-->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
         integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
         crossorigin='anonymous' />
@@ -23,54 +23,58 @@
     <!-- Heading -->
     <header>
         <!-- Navbar menu -->
-        <nav class="navbar navbar-expand-md ">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <h2 class="fs-4 fw-bold text-uppercase text-white m-0 website-name">start bootstrap</h2>
+        <nav class="navbar navbar-expand-md fixed-top bg-bluewood" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <h2 class="fw-bold text-uppercase m-0 website-name">start bootstrap</h2>
                 </a>
+
+                <!-- Toggle btn -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse flex-grow-0 " id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-semibold text-uppercase text-light" aria-current="page"
-                                href="#">Porfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-semibold text-uppercase text-light" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-semibold text-uppercase text-light" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+
+            <!--left Navbar -->
+            <div class="collapse navbar-collapse my-3 my-md-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto w-25 pe-2 rounded-start-4 ms-md-0 w-md-100 text-end bg-bluewood">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-semibold text-uppercase" aria-current="page"
+                            href="#Porfolio">Porfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-semibold text-uppercase" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-offset-2 fs-5 fw-semibold text-uppercase" href="#Contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
-
-
-
         <!-- Freelancer-profile -->
-        <div class="container-fluid ">
+        <div class="container-fluid mt-5 py-5">
             <div class="bg-mint text-light row row-cols-1 justify-content-center text-center align-items-end">
-                <div class="col-4 col-md-3 col-xl-2">
+                <!-- Freelancer img -->
+                <div class="col-6 col-md-3 col-lg-2">
                     <div class="smile-man pt-3">
                         <img src="./img/avatar.svg" class="img-fluid" alt="Avatar imgage">
                     </div>
                 </div>
+
+                <!-- Start Line through -->
                 <div class="col">
-                    <h1 class="my-3 fs-1 fw-semibold big-title">START BOOTSTRAP</h1>
-                    <div class="position-relative ">
-                        <div class=" border border-2 border-white w-25 m-auto"></div>
+                    <h1 class="my-3 fw-semibold big-title">START BOOTSTRAP</h1>
+                    <div class="wrapper position-relative ">
+                        <div class=" border border-2 border-white m-auto star-line-th"></div>
                         <i
                             class=" fs-2 fa-solid fa-star bg-mint position-absolute top-50 start-50 translate-middle p-1"></i>
                     </div>
-                    <div class="col">
-                        <!-- Freelancer -->
-                        <p class="py-3 fw-medium ">GRAPHIC ARTIST-WEB DESIGNER-ILLUSTRATOR</p>
-                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- Freelancer Skills -->
+                    <p class="py-3 fs-4">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
                 </div>
             </div>
         </div>
@@ -80,15 +84,17 @@
     <main>
 
         <!-- Freelancer Porfolio -->
-        <section id="Porfolio-cards" class="container py-5 ">
+        <section id="Porfolio" class="container py-5 ">
 
             <div class="row row-cols-1 justify-content-center text-center">
                 <div class="col-12">
-                    <h2 class=" fs-2 fw-semibold text-uppercase porfolio">Portfolio</h2>
+                    <h2 class="porfolio fw-semibold text-uppercase">Portfolio</h2>
                 </div>
-                <div class="col-4">
-                    <div class="position-relative py-4 ">
-                        <div class="b-c-bluewood"></div>
+
+                <!-- Start Line through -->
+                <div class="col">
+                    <div class="wrapper position-relative py-4 star-line-th m-auto">
+                        <div class="border-color-bluewood"></div>
                         <i
                             class="c-bluewood fs-2 fa-solid fa-star bg-white position-absolute top-50 start-50 translate-middle p-1"></i>
                     </div>
@@ -126,24 +132,26 @@
         </section>
 
         <!-- Freelancer Bootstrap About Section  -->
-        <section id="Site-info" class="bg-mint py-4">
+        <section id="About" class="bg-mint py-5">
             <div class="container text-center text-light">
 
                 <div class="row justify-content-center ">
-                    <div class="col-4">
-                        <h2 class="mb-4 text-uppercase fs-2 about">About</h2>
+                    <div class="col">
+                        <h2 class="text-uppercase fw-semibold about">About</h2>
 
-                        <div class="position-relative mb-3">
+                        <!-- Start Line through -->
+                        <div class=" wrapper position-relative m-auto my-4 star-line-th">
                             <div class=" border border-2 border-white "></div>
                             <i
                                 class="fs-2 fa-solid fa-star bg-mint position-absolute top-50 start-50 translate-middle p-1"></i>
                         </div>
                     </div>
-
                 </div>
-                <div class="row  justify-content-center text-start">
-                    <div class="col-sm-12 col-md-5">
-                        <p class="">
+
+                <!-- About section text -->
+                <div class="row justify-content-center text-start">
+                    <div class="col-7 col-md-5 col-lg-3">
+                        <p>
                             Freelancer is a free bootstrap
                             theme created by Start Bootstrap.
                             The download includes the
@@ -154,8 +162,8 @@
                         </p>
                     </div>
 
-                    <div class="col-sm-12 col-md-5 offset-md-1">
-                        <p class="">
+                    <div class="col-7 col-md-5 col-lg-3 offset-md-1">
+                        <p>
                             Whether you're a student looking to
                             showcase your work, a professional
                             looking to attract clients, or a
@@ -165,11 +173,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="row row-cols-1 py-3 justify-content-center">
 
-                    <div class=" col border  py-2 rounded-2 text-center w-25 ">
-                        <i class="fs-4 fa-solid fa-cloud-arrow-down"></i>
-                        <span class="fw-semibold fs-5 ">Download</span>
+                <!-- Btn Donwload -->
+                <div class="row row-cols-1 py-3 py-lg-0 justify-content-center">
+                    <div class="col download">
+                        <a href="#" class="btn btn-outline-light">
+                            <i class="fs-4 fa-solid fa-cloud-arrow-down"></i>
+                            <span class="fw-semibold fs-5 ">Download</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -177,45 +188,57 @@
 
 
         <!-- Personal information -->
-        <section class="py-3">
-            <div class=" container py-3">
+        <section id="Contact" class="py-5">
+            <div class=" container">
                 <div class="row row-cols-1 justify-content-center">
 
                     <div class="col">
-                        <h2 class="mb-4 text-center text-uppercase fw-bold form">Contact Me</h2>
+                        <h2 class="contact text-center text-uppercase fw-semibold my-4">Contact Me</h2>
                     </div>
 
-                    <div class="col-4">
-                        <div class="position-relative">
-                            <div class="b-c-bluewood"></div>
+                    <div class="col">
+                        <div class=" wrapper position-relative m-auto star-line-th">
+                            <div class="border-color-bluewood"></div>
                             <i
                                 class=" c-bluewood fs-2 fa-solid fa-star bg-white position-absolute top-50 start-50 translate-middle p-1"></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- personal data list -->
+                <!-- Contact form -->
                 <div class="row justify-content-center pt-5">
                     <div class="col-8">
 
-                        <form action="">
-                            <div class="mb-1">
-                                <label for="floatingf-name" class="fw-semibold fs-5">Name</label>
-                                <input type="name" class="Contact-form form-control" id="first-name">
+                        <form class="row row-cols-1 g-3">
+
+                            <!-- Form mane -->
+                            <div class="col">
+                                <label for="first-name" class="fw-semibold fs-5">Name</label>
+                                <input type="text" class="Contact-form form-control" id="first-name">
                             </div>
-                            <div class="mb-1">
-                                <label for="floatingInput" class="fw-semibold fs-5">Email address</label>
-                                <input type="email" class="Contact-form form-control" id="Email">
+
+                            <!-- Form Email -->
+                            <div class="col">
+                                <label for="Email" class="fw-semibold fs-5">Email address</label>
+                                <input type="Email" class="Contact-form form-control" id="Email">
                             </div>
-                            <div class="mb-1">
-                                <label for="floatingphone" class="fw-semibold fs-5">Phone Number</label>
+
+                            <!-- Form Phone -->
+                            <div class="col">
+                                <label for="Phone" class="fw-semibold fs-5">Phone Number</label>
                                 <input type="tel" class="Contact-form form-control" id="Phone">
                             </div>
-                            <div class="mb-2">
-                                <label for="floatingTextarea" class="fw-semibold fs-5">Message</label>
-                                <textarea class="Contact-form form-control" id="message"></textarea>
+
+                            <!-- Form text are message -->
+                            <div class="col">
+                                <label for="message" class="fw-semibold fs-5">Message</label>
+                                <textarea class="Contact-form form-control" id="message" rows="10"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-success bg-mint fs-5 mt-2">send</button>
+
+                            <!-- Form bnt -->
+                            <div class="col">
+                                <button type="submit" class="btn btn-success bg-mint fs-5 mt-2 border-0">send</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -224,20 +247,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-plaudit text-light mt-4">
-        <div class="container-fluid">
+    <footer class="bg-plaudit text-light">
+        <div class="container-fluid py-5 py-lg-4">
 
             <!-- Company Address -->
-            <div id="Address"
-                class="row row-cols-1 row-cols-md-3 justify-content-center align-items-center g-3 text-center">
-                <div class="col-8">
-                    <h5>LOCATION</h5>
-                    <p class="fw-semibold fs-5">2215 John Daniel Drive Clark, MO 54243</p>
+            <div id="Address" class="row row-cols-1 justify-content-center justify-content-lg-around g-3 text-center">
+                <div class="col-lg-4 col-xl-3 ">
+                    <p class="fs-4 mb-1 m-lg-0">LOCATION</p>
+                    <p class="fs-5 lh-sm">2215 John Daniel Drive Clark, MO 54243</p>
                 </div>
 
                 <!-- Company Socials Profile -->
-                <div class="col-8 company-socials">
-                    <h5>AROUND THE WEB</h5>
+                <div class="col-lg-4 col-xl-3 company-socials">
+                    <p class="fs-4  ">AROUND THE WEB</p>
                     <a><i class="fa-brands fa-facebook-f"></i></a>
                     <a><i class="fa-brands fa-google-plus-g"></i></a>
                     <a><i class="fa-brands fa-twitter"></i></a>
@@ -245,9 +267,9 @@
                 </div>
 
                 <!-- About us -->
-                <div class="col-8">
-                    <h5 class="mt-3">ABOUT FREELANCER</h5>
-                    <p class="fw-semibold fs-5">Freelancer is a free to use, open source Bootstrap theme created by <a
+                <div class=" col-9 col-lg-4 col-xl-3 ">
+                    <p class="mt-3 m-lg-0 fs-4">ABOUT FREELANCER</p>
+                    <p class="fs-5 m-lg-0 lh-sm">Freelancer is a free to use, open source Bootstrap theme created by <a
                             href="#" class="c-mint">Start
                             Bootstrap</a>.</p>
                 </div>
@@ -257,7 +279,7 @@
         <!-- Copyright -->
         <div id="copyright" class="container-fluid  bg-bluewood text-center">
             <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-4">
+                <div class="col-">
                     <small>
                         <span>copyright © Your Website 2019</span>
                     </small>
@@ -265,6 +287,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'
+        integrity='sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=='
+        crossorigin='anonymous'></script>
 </body>
 
 </html>
